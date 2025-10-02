@@ -1,123 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Animin</title>
-	<meta name="description" content="Animin" />
-	<meta name="keywords" content="Anime online" />
-	<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animin | Главная</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <div class="container">
 
-	<header class="header">
-		<div class="logo_text">
-			<h1><a href="index.html">Animin</a></h1>
-			<h2>Animin - the best anime player</h2>
-		</div>
+  <header class="header">
+    <div class="header__logo">
+      <h1 class="header__title"><a href="index.html">Animin</a></h1>
+      <p class="header__subtitle">Animin — the best anime player</p>
+    </div>
+    <nav class="header__menu">
+      <ul class="menu">
+        <li class="menu__item menu__item--active"><a href="index.html">Главная</a></li>
+        <li class="menu__item"><a href="Anime.html">Аниме</a></li>
+        <li class="menu__item"><a href="Rating.html">Рейтинг</a></li>
+        <li class="menu__item"><a href="#">Жанры</a></li>
+        <li class="menu__item"><a href="Naruto.html">Смотреть Наруто</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		<nav class="menubar">
-			<ul class="menu">
-				<li class="selected"><a href="index.html">Главная</a></li>	
-				<li><a href="Anime.html">Аниме</a></li>
-				<li><a href="Rating.html">Рейтинг</a></li>
-				<li><a href="#">Жанры</a></li>
-				<li><a href="Naruto.html">Смотреть Наруто</a></li>
-			</ul>
-		</nav>
-	</header>
+  <main class="main">
+    <aside class="sidebar">
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Поиск</h2>
+        <form>
+          <input type="search" placeholder="ваш запрос">
+          <button type="submit" class="btn">Найти</button>
+        </form>
+      </div>
 
-	<main class="site_content">
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Вход</h2>
+        <form>
+          <input type="text" placeholder="логин">
+          <input type="password" placeholder="пароль">
+          <button type="submit" class="btn">Вход</button>
+        </form>
+      </div>
 
-		<aside class="sidebar_container">
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Новости</h2>
+        <p><b>05.04.20</b> — Мы открылись!</p>
+      </div>
 
-			<div class="sidebar">
-				<h2>Поиск</h2>
-				<form method="post" action="#" id="search_form" >
-					<input type="search" name="search_field" placeholder="ваш запрос" />
-					<input type="submit" class="btn" value="найти" />
-				</form>
-			</div>
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Рейтинг аниме</h2>
+        <ul>
+          <li>Ван Пис <span class="rating">9.9</span></li>
+          <li>Наруто <span class="rating">9.8</span></li>
+          <li>Блич <span class="rating">9.6</span></li>
+          <li>Фейри Тейл <span class="rating">9.3</span></li>
+        </ul>
+      </div>
+    </aside>
 
-			<div class="sidebar">
-				<h2>Вход</h2>
-				<form method="post" action="#" id="login">
-					<input type="text" name="login_field" placeholder="логин" />
-					<input type="password" name="password_field" placeholder="пароль" />
-					<input type="submit" class="btn" value="вход" />
-					<div class="lables_passreg_text">
-						<span><a href="#">забыли пароль?</a></span> | 
-						<span><a href="#">регистрация</a></span>
-					</div>
-				</form>
-			</div>
+    <section class="content">
+      <h1>Новые манги</h1>
+      <div class="films">
+        <a href="Bleach.html"><img src="assets/img/Bleach_fan.jpg" alt="Bleach"></a>
+        <a href="Demon.html"><img src="assets/img/Demon.jpg" alt="Demon"></a>
+        <a href="#"><img src="assets/img/Boruto.png" alt="Boruto"></a>
+        <a href="#"><img src="assets/img/3.jpg" alt="Anime"></a>
+      </div>
 
-			<div class="sidebar">
-				<h2>Новости</h2>
-				<span>05.04.20</span>
-				<p>Мы открылись!</p>
-				<a href="#">читать</a>
-			</div>
+      <h1>Новые аниме</h1>
+      <div class="films">
+        <a href="Attack_Titan.html"><img src="assets/img/Attack_Titan.jpg" alt="Titan"></a>
+        <a href="Myhero.html"><img src="assets/img/Myhero.jpg" alt="Hero"></a>
+        <a href="One_Piece.html"><img src="assets/img/One_Piece.jpg" alt="One Piece"></a>
+        <a href="Naruto.html"><img src="assets/img/Naruto.jpg" alt="Naruto"></a>
+      </div>
+    </section>
+  </main>
 
-			<div class="sidebar">
-				<h2>Рейтинг Аниме</h2>
-				<ul>
-					<li><a href="#">Ван Пис</a><span class="rating_sidebar">9.9</span></li>
-					<li><a href="#">Наруто</a><span class="rating_sidebar">9.8</span></li>
-					<li><a href="#">Блич</a><span class="rating_sidebar">9.6</span></li>
-					<li><a href="#">Фейри тейл</a><span class="rating_sidebar">9.3</span></li>
-				</ul>
-			</div>
-
-		</aside>
-
-		<section class="content">
-			<h1>Новые манги</h1>
-			<div class="films_block">
-				<a href="Bleach.html"><img src="assets/img/Bleach_fan.jpg"></a>
-				<a href="Demon.html"><img src="assets/img/Demon.jpg"></a>
-				<a href="#"><img src="assets/img/Boruto.png"></a>
-				<a href="#"><img src="assets/img/3.jpg"></a>
-			</div>
-
-			<h1>Новые аниме</h1>
-			<div class="films_block">
-				<a href="Attack_Titan.html"><img src="assets/img/Attack_Titan.jpg"></a>
-				<a href="Myhero.html"><img src="assets/img/Myhero.jpg"></a>
-				<a href="One_Piece.html"><img src="assets/img/One_Piece.jpg"></a>
-				<a href="Naruto.html"><img src="assets/img/Naruto.jpg"></a>
-			</div>
-
-			<div class="posts">
-				<hr>
-				<h2><a href="#">Биография Масаши Кишимото</a></h2>
-				<div class="posts_content">
-					<p>Масаси Кисимото родился в префектуре Окаяма, Япония...</p>
-				</div>
-				<p><a href="#">читать</a></p>
-
-				<hr>
-				<h2><a href="#">One Piece | Большой куш</a></h2>
-				<div class="posts_content">
-					<p>One Piece (ワンピース) — манга Эйитиро Оды...</p>
-				</div>
-				<p><a href="#">читать</a></p>
-			</div>
-		</section>
-	</main>
-
-	<footer class="footer">
-		<p>
-			<a href="index.html">Главная</a> |
-			<a href="Rating.html">Рейтинг</a> | 
-			<a href="#">Жанры</a> |
-			<a href="#">Новости</a> |
-			<a href="Contacts.html">Контакты</a>
-		</p>
-		<p>animin.com 2025</p>
-	</footer>
+  <footer class="footer">
+    <nav class="footer__menu">
+      <a href="index.html">Главная</a> |
+      <a href="Rating.html">Рейтинг</a> |
+      <a href="#">Жанры</a> |
+      <a href="#">Новости</a> |
+      <a href="Contacts.html">Контакты</a>
+    </nav>
+    <p class="footer__copy">© Animin 2025</p>
+  </footer>
 
 </div>
 </body>
